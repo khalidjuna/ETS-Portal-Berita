@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Header Styles */
+header .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+    position: sticky;
+}
+
+header .navbar-brand:hover, header .navbar-brand:focus {
+    transform: scale(1.05);
+    color: #f8f8f8;
+    position: sticky;
+}
+
+/* Navbar Link Styles */
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5rem 1rem;
+    position: sticky;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    color: #f8f8f8;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transform: scale(1.1);
+    position: sticky;
+}
+
+
+/* Main Content Styles */
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Section Heading Styles */
+section h2 {
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.2em;
+    color: #0056b3;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #202020;
+    color: #f8f8f8;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    header .navbar-brand, footer p {
+        font-size: 16px;
+    }
+    section h2 {
+        font-size: 1.2em;
+    }
+}
+
+/* Animation for Links */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover, a:focus {
+    color: #6610f2;
+    text-decoration: none;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem 0 0 0.25rem; /* Memberikan border-radius pada bagian kiri atas dan bawah gambar */
+}
+
+@media (max-width: 768px) {
+    .card-img {
+        border-radius: 0.25rem 0.25rem 0 0; /* Mengubah radius untuk tampilan mobile */
+    }
+}
